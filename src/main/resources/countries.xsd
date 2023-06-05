@@ -1,7 +1,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://spring.io/guides/gs-producing-web-service"
            targetNamespace="http://spring.io/guides/gs-producing-web-service" elementFormDefault="qualified">
 
-    <xs:element name="getCountryRequest">
+    <xs:element name="getCodRequest">
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="name" type="xs:string"/>
@@ -9,18 +9,18 @@
         </xs:complexType>
     </xs:element>
 
-    <xs:element name="getCountryResponse">
+    <xs:element name="getCodResponse">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="country" type="tns:country"/>
+                <xs:element name="cod" type="tns:cod"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
 
-    <xs:complexType name="country">
+    <xs:complexType name="cod">
         <xs:sequence>
             <xs:element name="name" type="xs:string"/>
-            <xs:element name="capital" type="xs:string"/>
+            <xs:element name="ingles" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
 </xs:schema>

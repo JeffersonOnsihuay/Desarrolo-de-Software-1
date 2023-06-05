@@ -5,8 +5,8 @@ Content-Type: text/xml
 				  xmlns:gs="http://spring.io/guides/gs-producing-web-service">
    <soapenv:Header/>
    <soapenv:Body>
-      <gs:getCountryRequest>
-         <gs:name>Miercoles</gs:name>
-      </gs:getCountryRequest>
+      <gs:getCodRequest>
+         <gs:name>Martes</gs:name>
+      </gs:getCodRequest>
    </soapenv:Body>
 </soapenv:Envelope>
