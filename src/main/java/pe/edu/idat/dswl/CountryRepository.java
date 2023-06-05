@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import io.spring.guides.gs_producing_web_service.Country;
-import io.spring.guides.gs_producing_web_service.Currency;
+// import io.spring.guides.gs_producing_web_service.Currency;
 import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 
@@ -15,29 +15,53 @@ public class CountryRepository {
 
 	@PostConstruct
 	public void initData() {
-		Country spain = new Country();
-		spain.setName("Spain");
-		spain.setCapital("Madrid");
-		spain.setCurrency(Currency.EUR);
-		spain.setPopulation(46704314);
+		Country lunes = new Country();
+		lunes.setName("Lunes");
+		lunes.setCapital("Monday");
 
-		countries.put(spain.getName(), spain);
+		countries.put(lunes.getName(), lunes);
 
-		Country poland = new Country();
-		poland.setName("Poland");
-		poland.setCapital("Warsaw");
-		poland.setCurrency(Currency.PLN);
-		poland.setPopulation(38186860);
 
-		countries.put(poland.getName(), poland);
+        Country martes = new Country();
+		martes.setName("Martes");
+		martes.setCapital("Tuesday");
 
-		Country uk = new Country();
-		uk.setName("United Kingdom");
-		uk.setCapital("London");
-		uk.setCurrency(Currency.GBP);
-		uk.setPopulation(63705000);
+		countries.put(martes.getName(), martes);
 
-		countries.put(uk.getName(), uk);
+
+        Country miercoles = new Country();
+		miercoles.setName("Miercoles");
+		miercoles.setCapital("Wednesday");
+
+		countries.put(miercoles.getName(), miercoles);
+
+
+        Country jueves = new Country();
+		jueves.setName("Jueves");
+		jueves.setCapital("Thursday");
+
+		countries.put(jueves.getName(), jueves);
+
+
+        Country viernes = new Country();
+		viernes.setName("Viernes");
+		viernes.setCapital("Friday");
+
+		countries.put(viernes.getName(), viernes);
+
+
+        Country sabado = new Country();
+		sabado.setName("Sabado");
+		sabado.setCapital("Saturday");
+
+		countries.put(sabado.getName(), sabado);
+
+
+        Country domingo = new Country();
+		domingo.setName("Domingo");
+		domingo.setCapital("Sunday");
+
+		countries.put(domingo.getName(), domingo);
 	}
 
 	public Country findCountry(String name) {

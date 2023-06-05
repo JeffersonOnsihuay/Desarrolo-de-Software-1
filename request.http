@@ -6,7 +6,7 @@ Content-Type: text/xml
    <soapenv:Header/>
    <soapenv:Body>
       <gs:getCountryRequest>
-         <gs:name>Spain</gs:name>
+         <gs:name>Miercoles</gs:name>
       </gs:getCountryRequest>
    </soapenv:Body>
 </soapenv:Envelope>
